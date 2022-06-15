@@ -101,12 +101,9 @@
 		C2600937285A820F0006B1F0 /* identity_card */ = {
 			isa = PBXGroup;
 			children = (
-				C2600938285A820F0006B1F0 /* AppDelegate.swift */,
-				C260093A285A820F0006B1F0 /* SceneDelegate.swift */,
-				C260093C285A820F0006B1F0 /* ViewController.swift */,
-				C260093E285A820F0006B1F0 /* Main.storyboard */,
-				C2600944285A820F0006B1F0 /* Assets.xcassets */,
-				C2600946285A820F0006B1F0 /* LaunchScreen.storyboard */,
+				C260096C285A82290006B1F0 /* Application */,
+				C260096D285A82380006B1F0 /* Controller */,
+				C260096E285A82470006B1F0 /* View */,
 				C2600949285A820F0006B1F0 /* Info.plist */,
 				C2600941285A820F0006B1F0 /* identity_card.xcdatamodeld */,
 			);
@@ -128,6 +125,33 @@
 				C260095E285A820F0006B1F0 /* identity_cardUITestsLaunchTests.swift */,
 			);
 			path = identity_cardUITests;
+			sourceTree = "<group>";
+		};
+		C260096C285A82290006B1F0 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				C2600938285A820F0006B1F0 /* AppDelegate.swift */,
+				C260093A285A820F0006B1F0 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		C260096D285A82380006B1F0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C260093C285A820F0006B1F0 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C260096E285A82470006B1F0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C260093E285A820F0006B1F0 /* Main.storyboard */,
+				C2600944285A820F0006B1F0 /* Assets.xcassets */,
+				C2600946285A820F0006B1F0 /* LaunchScreen.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

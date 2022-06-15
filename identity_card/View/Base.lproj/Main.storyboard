@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="identity_card" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hiA-ZG-eCx">
+                                <rect key="frame" x="107.5" y="771" width="199" height="81"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="81" id="8xh-B5-rNR"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Check identity">
+                                    <backgroundConfiguration key="background" cornerRadius="25" strokeWidth="5" strokeOutset="10">
+                                        <color key="backgroundColor" red="1" green="0.33913995009999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" type="italicSystem" pointSize="28"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="checkIdentity:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sQd-qK-n9r"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="DGt-at-c0g">
+                                <rect key="frame" x="107" y="468" width="200" height="125"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="28" translatesAutoresizingMaskIntoConstraints="NO" id="67g-ZD-fru">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="HSF-mH-bqe"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Surname" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BML-i2-hr6">
+                                        <rect key="frame" x="0.0" y="75" width="200" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="3s3-Oq-PxD"/>
+                                </constraints>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="facemask.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="7UC-xI-K0V">
+                                <rect key="frame" x="87" y="169" width="240" height="128"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="133" id="2CZ-zE-eIY"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hmF-uS-JKa">
+                                <rect key="frame" x="166" y="648.5" width="82" height="105.5"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemMintColor"/>
+                        <constraints>
+                            <constraint firstItem="hiA-ZG-eCx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="12h-EH-E2V"/>
+                            <constraint firstItem="DGt-at-c0g" firstAttribute="centerX" secondItem="7UC-xI-K0V" secondAttribute="centerX" id="AZl-Jt-D5a"/>
+                            <constraint firstItem="DGt-at-c0g" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="424" id="ClQ-3i-u5A"/>
+                            <constraint firstItem="hmF-uS-JKa" firstAttribute="top" secondItem="DGt-at-c0g" secondAttribute="bottom" constant="55.5" id="HQx-2O-MUL"/>
+                            <constraint firstItem="DGt-at-c0g" firstAttribute="centerX" secondItem="hiA-ZG-eCx" secondAttribute="centerX" id="K1r-Tm-Zdr"/>
+                            <constraint firstItem="hiA-ZG-eCx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107.5" id="TmN-e3-3py"/>
+                            <constraint firstItem="hiA-ZG-eCx" firstAttribute="firstBaseline" secondItem="hmF-uS-JKa" secondAttribute="baseline" constant="59" symbolType="layoutAnchor" id="dx7-rp-7DE"/>
+                            <constraint firstItem="hmF-uS-JKa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="166" id="eia-R9-JBL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hiA-ZG-eCx" secondAttribute="bottom" constant="10" id="j1L-TE-L2f"/>
+                            <constraint firstItem="7UC-xI-K0V" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="t41-Xu-u3c"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hmF-uS-JKa" secondAttribute="trailing" constant="166" id="uqh-uv-z6n"/>
+                            <constraint firstItem="7UC-xI-K0V" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="122.5" id="vii-B0-zZX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="hmF-uS-JKa" id="bGB-a3-RZE"/>
+                        <outlet property="name" destination="67g-ZD-fru" id="Myq-Jj-iKo"/>
+                        <outlet property="surname" destination="BML-i2-hr6" id="Zr7-oV-pCW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1" y="94"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="facemask.fill" catalog="system" width="128" height="67"/>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
