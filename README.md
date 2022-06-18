@@ -37,5 +37,12 @@ The code is pretty simple and straightforeward beacuse it has to be understood i
       }
 
 
-  }
+  }  
 ```
+
+
+## Application structure 
+  
+The application structure is a type of app, that let you identify with the Universal identificaction system. 
+  
+  
